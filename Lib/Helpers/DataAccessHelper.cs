@@ -1,12 +1,7 @@
-﻿using Lib.Models;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lib.Helpers
 {
@@ -40,24 +35,7 @@ namespace Lib.Helpers
 
             return "";
         }
-
-        /// <summary>
-        /// Возвращает содержимое фала как набор строк
-        /// </summary>
-        /// <param name="fullFileName">Поное имя файла</param>
-        /// <returns>Содержимое фала как набор строк</returns>
-        public static List<string> GetFileLines(this string fullFileName)
-        {
-            if (File.Exists(fullFileName))
-            {
-                return File.ReadAllLines(fullFileName).ToList();
-            }
-            else
-            {
-                return new List<string>();
-            }
-        }
-
+        
         /// <summary>
         /// Сохраняет результат запроса в файл
         /// </summary>
@@ -81,8 +59,8 @@ namespace Lib.Helpers
         /// Получает данные из ответа SQLSERVER и
         /// возвращает в виде коллекции строк данных
         /// </summary>
-        /// <param name="dataReader">Объект SqlDataReader для возврата результатов запроса</param>
-        /// <returns>Коллекция List строк данных</returns>
+        /// <param name="dataReader"></param>
+        /// <returns></returns>
         public static List<List<string>> GetData(this SqlDataReader dataReader)
         {
             List<List<string>> output = new List<List<string>>();
