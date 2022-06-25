@@ -1,0 +1,4 @@
+USE [MyWork]
+SELECT *
+FROM [dbo].[Employees]
+WHERE Age >= 23
