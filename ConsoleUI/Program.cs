@@ -1,11 +1,7 @@
 ﻿using Lib;
-using Lib.DataAccess;
 using Lib.Helpers;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ReadAndRunQuery
 {
@@ -15,18 +11,6 @@ namespace ReadAndRunQuery
         {
             // инициализация соединения
             GlobalConfig.InitializeConnections(DatabaseAccessType.Sql);
-
-            // создание базы данных MyWork
-            GlobalConfig.Connection.CreateDatabase();
-
-            // создание таблицы Employees
-            GlobalConfig.Connection.CreateTable();
-
-            // создание хранимой поцедуры для вставки Person
-            GlobalConfig.Connection.CreatePersonInsertSP();
-
-            // заполнение БД данными из текстового файла
-            GlobalConfig.Connection.FillDbFromPersonDataFile();
 
             // обработка input.txt
             ProcessInputTxt();

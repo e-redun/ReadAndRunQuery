@@ -47,23 +47,7 @@
     <Compile Include="Enums\Enums.cs" />
     <Compile Include="GlobalConfig.cs" />
     <Compile Include="Helpers\DataAccessHelper.cs" />
-    <Compile Include="Helpers\Factory.cs" />
-    <Compile Include="Models\PersonModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="SqlQueries\InsertPerson.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlQueries\CreatePersonInsertSP.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlQueries\CreateTable.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlQueries\CreateDatabase.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

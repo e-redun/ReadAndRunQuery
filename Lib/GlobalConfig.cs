@@ -10,10 +10,6 @@ namespace Lib
     {
         public const string InputFile = "input.txt";
         public const string OutputFile = "output.csv";
-        public const string CreateDatabaseSqlFile = "CreateDatabase.sql";
-        public const string CreateTableSqlFile = "CreateTable.sql";
-        public const string CreatePersonInsertSPFile = "CreatePersonInsertSP.sql";
-        public const string InsertPersonSqlFile = "InsertPerson.sql";
 
 
         public static IDataConnection Connection { get; private set; }
